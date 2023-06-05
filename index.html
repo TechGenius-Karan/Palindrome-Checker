@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Palindrome Checker</title>
+</head>
+<body>
+   <h1>This is a Palindrome Checker</h1>
+
+   <h2>Enter your text below to check if it is a Palindrome</h2>
+
+   <input id="input" type="text" placeholder="enter text"></input>
+   <button id="btn">Submit</button>
+
+   <br>
+
+   <p id="result"></p>
+
+   <div id="rotate3D"></div>
+
+<style type="text/css">
+
+	body {
+		background:linear-gradient(to right, #D21086, red);
+		text-align:center;
+	}
+   
+   #rotate3D {
+    display:flex;
+    flex:center;
+    width:500px;
+    height:100px;
+    color: whitesmoke;
+    font-weight:bold;
+    font-size:6rem;
+    margin:70px auto;
+    border-radius:5px;
+    text-transform: uppercase;
+    text-align:center;
+}
+
+   h1 {
+   	color:rgba(0,50,230,0.7);
+   	font-family:'Raleway';
+   	text-transform:uppercase;
+   	letter-spacing:2px;
+   	font-size:3.5rem;
+   }
+   h2 {
+   	font-family:sans-serif;
+   }
+   p {
+   	color:cyan;
+   	font-size:150%;
+   	font-weight:bold;
+   }
+   #input {
+   	margin-right:5px;
+   	padding:2px 0px;
+   	width:200px;
+   	text-align:center;
+   	font-size:150%;
+   	background:linear-gradient(to right, yellow,orange);
+   	border-radius:2px;
+   }
+
+   #btn {
+   	color:darkorange;
+   	background:linear-gradient(to right, cyan,#00BDBD);
+   	font-weight:bold;
+   	font-size:110%;
+   	padding:5px 2px;
+   	width:80px;
+   	border-radius:5px;
+
+   }
+   #btn:hover {
+   	color:orangered;
+   	background:linear-gradient(to right, darkcyan,#1D7575);
+   	transform:scale(1.1);
+   }
+
+   #animated {
+      color:limegreen;
+      font-size:4rem;
+      text-transform:uppercase;
+      letter-spacing: 20px;
+      transition:;
+      transform:matrix(1, 0, 0, 1, 0, 0);
+   }
+   #animated:hover {
+      transform:rotateY(90deg);
+      cursor:pointer;
+   }
+</style>
+<script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>
